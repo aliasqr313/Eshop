@@ -4,9 +4,9 @@ namespace Eshop.Data.DTOs.Account
 {
     public class RegisterUserDTO
     {
-        [Display(Name = "")]
-        [Required(ErrorMessage = "")]
-        [MaxLength(200, ErrorMessage = "")]
+        [Display(Name = "شماره موبایل")]
+        [Required(ErrorMessage = "لطفا{0}را وارد کنید")]
+        [MaxLength(11, ErrorMessage = "شماره موبایل نمیتواند بیشتر از 11 رقم باشد")]
         public string MobileNumber { get; set; }
     }
 }

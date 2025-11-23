@@ -1,10 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
 
 namespace Eshop.Data.DTOs.Account
 {
     public class UserDetailDTO
     {
-        [Key]
         public long id { get; set; }
         public DateTime CreatData { get; set; }
         public DateTime LastUpdateData { get; set; }

@@ -4,10 +4,10 @@ namespace Eshop.Data.DTOs.Account
 {
     public class LoginDTO
     {
-        [Display(Name = "")]
-        [Required(ErrorMessage = "")]
-        [MaxLength(200, ErrorMessage = "")]
+        [Display(Name = "شماره موبایل")]
+        [Required(ErrorMessage = "لطفا{0}را وارد کنید")]
+        [MaxLength(11, ErrorMessage = "{نمیتواند بیشتر از {1}  کاراکتر باشد{0")]
         public string MobileNumber { get; set; }
-        public string ReturnUrl { get; set; }
+        public string? ReturnUrl { get; set; }   //ریدایرکت کردن به صفحه ای که کاربر قرار داشت
     }
 }
